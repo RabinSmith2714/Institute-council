@@ -1,0 +1,17 @@
+.basic-nav {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 10px 151.6px;
+    border: 2px solid while;
+    text-align: center;
+    background-color: white;
+
+
+}
+
+.basic-bar a:hover {
+    background-color: blue;
+    color: white;
+
+}
