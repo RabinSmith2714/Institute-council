@@ -71,39 +71,7 @@ class userController extends Controller
         ]);
     }
     // edit Journal
-   
-    public function editJournal($id)
-{
-    $journal = Journal::findOrFail(id: $id);
-    return response()->json([
-        'status' => 200,
-        'data' => [
-            'faculty_name' => $journal->faculty_name,
-            'faculty_id' => $journal->faculty_id,
-            'type' => $journal->type,
-            'title' => $journal->title,
-            'volume' => $journal->volume,
-            'issuenumber' => $journal->issuenumber,
-            'pages' => $journal->pages,
-            'date' => $journal->date,
-            'link' => $journal->link,
-            'noauthor' => $journal->noauthor,
-            'position' => $journal->position
-        ]
-    ]);
-    
-}
 
-    // update Journal
-    public function updateuser(Request $request, $id){
-        $user = Journal::findorFail($id);
-        $user->update($request->all());
-
-        return response()->json([
-            'status' => 200,
-            'message' => 'User Updated successfully!'
-        ]);
-    }
 
 
     // add consultancy
