@@ -539,6 +539,8 @@
                             </div>
                         </div>
 
+                        
+
                         <!----------Consultancy tab------->
                         <div class="tab-pane fade" id="consultancytab" role="tabpanel" aria-labelledby="consultancy-tab">
                             <br>
@@ -601,6 +603,70 @@
                                         </button>
                                     </div>
                                     <form id="addNewConsultancy" enctype="multipart/form-data">
+                                        <div class="modal-body">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="faculty_name">Faculty Name</label>
+                                                    <input type="text" id="faculty_name" name="faculty_name" placeholder="Enter Faculty name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="faculty_id">Faculty Name</label>
+                                                    <input type="text" id="faculty_id" name="faculty_id" placeholder="Enter Faculty ID">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="title">Title</label>
+                                                <input type="text" id="title" name="title" placeholder="Enter Title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="industryType">Industry type</label>
+                                                <select id="industryType" name="industryType" class="form-control">
+                                                    <option value="">Choose...</option>
+                                                    <option value="Technology">Technology</option>
+                                                    <option value="Healthcare">Healthcare</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="date">Date</label>
+                                                <input type="date" class="form-control" id="date" name="date" placeholder="Enter date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="moe">Is MOU Signed</label>
+                                                <select id="moe" name="moe" class="form-control">
+                                                    <option value="">Choose...</option>
+                                                    <option value="Yes">Yes</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Earnings</label>
+                                                <input type="number" id="earnings" name="earnings" placeholder="Enter Earnings">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="image">Upload File</label>
+                                                <input type="file" id="image" name="image" placeholder="upload file">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----- Edit Consultancy modal---->
+                        <div class="modal fade" id="editconsultancyModal" tabindex="-1" role="dialog" aria-labelledby="editconsultancyModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editconsultancyModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form id="editConsultancy" enctype="multipart/form-data">
                                         <div class="modal-body">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
@@ -779,6 +845,74 @@
                             </div>
                         </div>
 
+                        <!------- Edit funded projects modal--------->
+                        <div class="modal fade" id="editfundedprojectsModal" tabindex="-1" role="dialog" aria-labelledby="editfundedprojectsModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editfundedprojectsModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form id="editfundedProjects">
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label for="faculty_name">Faculty Name</label>
+                                                <input type="text" id="faculty_name" name="faculty_name" placeholder="Enter Faculty name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="faculty_id">Faculty ID</label>
+                                                <input type="text" id="faculty_id" name="faculty_id" placeholder="Enter Faculty ID">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="type">Type</label>
+                                                <select id="type" name="type" class="form-control">
+                                                    <option value="">Choose...</option>
+                                                    <option value="Funded Projects">Funded Projects</option>
+                                                    <option value="Sponsored Research">Sponsored Research</option>
+                                                    <option value="Grants">Grants</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="title">Title</label>
+                                                <input type="text" id="title" name="title" placeholder="Enter Title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="date">Date</label>
+                                                <input type="text" id="date" name="date" placeholder="Enter date">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="projectid">Project Id</label>
+                                                <input type="text" id="projectid" name="projectid" placeholder="Enter Project ID">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fundingagency">Funding Agency</label>
+                                                <input type="text" id="fundingagency" name="fundingagency" placeholder="Enter Funding agency">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="link">Link</label>
+                                                <input type="url" class="form-control" id="link" name="link" placeholder="Enter link">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="requestedamount">Requested Amount</label>
+                                                <input type="number" id="requestedamount" name="requestedamount" placeholder="Enter Requested amount">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="image">Upload File</label>
+                                                <input type="file" id="image" name="image" placeholder="upload file">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
                         <!--------Awareness Program tab------------->
                         <div class="tab-pane fade" id="awareness_program" role="tabpanel" aria-labelledby="awareness_program-tab">
                             <br>
@@ -843,6 +977,65 @@
                                         </button>
                                     </div>
                                     <form id="addNewawarenessProgram">
+                                        <div class="modal-body">
+                                            +
+                                            <div class="form-group col-md-6">
+                                                <label for="faculty_name">Faculty Name</label>
+                                                <input type="text" id="faculty_name" name="faculty_name" placeholder="Enter Faculty name">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label for="faculty_id">Faculty ID</label>
+                                                <input type="text" id="faculty_id" name="faculty_id" placeholder="Enter Faculty ID">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="organiserName">Organiser Name</label>
+                                            <input type="text" id="organiserName" name="organiserName" placeholder="Enter Organiser name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="programName">Program Name</label>
+                                            <input type="text" id="programName" name="programName" placeholder="Enter Program name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="date">Date</label>
+                                            <input type="text" id="date" name="date" placeholder="Enter date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="placeHeld">Place Held</label>
+                                            <input type="text" id="placeHeld" name="placeHeld" placeholder="Enter Place held">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="programDetails">Program Details</label>
+                                            <input type="text" id="programDetails" name="programDetails" placeholder="Enter Program details">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="speaker">Speaker</label>
+                                            <input type="url" class="form-control" id="speaker" name="speaker" placeholder="Enter Speaker">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="image">Upload File</label>
+                                            <input type="file" id="image" name="image" placeholder="upload File">
+                                        </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!------- Edit Awareness Program modal--------->
+                        <div class="modal fade" id="editawarenessProgramModal" tabindex="-1" role="dialog" aria-labelledby="editawarenessProgramModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editawarenessProgramModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form id="editawarenessProgram">
                                         <div class="modal-body">
                                             +
                                             <div class="form-group col-md-6">
@@ -1048,6 +1241,100 @@
                             </div>
                         </div>
 
+                        <!----- Edit Conference modal ----->
+                        <div class="modal fade" id="editConferenceModal" tabindex="-1" role="dialog" aria-labelledby="editConferenceModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editConferenceModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form id="editConference" enctype="multipart/form-data">
+                                        <div class="modal-body">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="faculty_name">Faculty Name:</label>
+                                                    <input type="text" id="faculty_name" name="faculty_name" placeholder="Enter Faculty's name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="faculty_id">Faculty Id:</label>
+                                                    <input type="number" id="faculty_id" name="faculty_id" placeholder="Enter Faculty's ID">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="title">Title:</label>
+                                                <input type="text" id="title" name="title" placeholder="Enter Title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="organizer">Organizer:</label>
+                                                <input type="text" id="organizer" name="organizer" placeholder="Enter Organizer">
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="publisher_name">Publisher Name:</label>
+                                                    <input type="text" id="publisher_name" name="publisher_name" placeholder="Enter Publisher name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="indexing_detail">Indexing Details:</label>
+                                                    <input type="text" id="indexing_detail" name="indexing_detail" placeholder="Enter Indexing details">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group">
+                                                    <label for="level">Level</label>
+                                                    <select id="level" name="level" class="form-control">
+                                                        <option value="">Choose...</option>
+                                                        <option value="National">National</option>
+                                                        <option value="Inter-national">Inter-national</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="date">Date:</label>
+                                                    <input type="text" id="date" name="date" placeholder="Enter date">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="title_of_paper">Title of paper:</label>
+                                                <input type="text" id="title_of_paper" name="title_of_paper" placeholder="Enter Title of the paper">
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="isbn">ISBN:</label>
+                                                    <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="no_of_authors">No of Authors:</label>
+                                                    <input type="text" id="no_of_authors" name="no_of_authors" placeholder="Enter  No of Author's">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="authors_position">Author Position:</label>
+                                                    <input type="text" id="authors_position" name="authors_position" placeholder="Enter Author's position">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="link">Link:</label>
+                                                    <input type="text" id="link" name="link" placeholder="Enter link">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="image">Upload File:</label>
+                                                <input type="file" id="image" name="image" placeholder="Upload file">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
                         <!--------Patent tab------------->
                         <div class="tab-pane fade" id="patent" role="tabpanel" aria-labelledby="patent-tab">
                             <br>
@@ -1112,6 +1399,67 @@
                                         </button>
                                     </div>
                                     <form id="addNewpatents">
+                                        <div class="modal-body">
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="faculty_name">Enter Name:</label>
+                                                    <input type="text" id="faculty_name" name="faculty_name" placeholder="Enter your Name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="faculty_id">Enter Id:</label>
+                                                    <input type="number" id="faculty_id" name="faculty_id" placeholder="Enter your ID">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="title">Title:</label>
+                                                <input type="text" id="title" name="title" placeholder="Enter Title">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="fieldofInnovation">Field of Innovation</label>
+                                                <input type="text" id="field_of_innovation" name="fieldofInnovation" placeholder="Enter field of Innovation">
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="date">Filling Date:</label><br>
+                                                    <input type="text" id="date" name="date" placeholder="Enter filling date">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="no_of_authors">No of Authors:</label>
+                                                    <input type="text" id="no_of_authors" name="no_of_authors" placeholder="enter journal issue no">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="authors_position">Authors Position:</label>
+                                                <input type="text" id="authors_position" name="authors_position" placeholder="enter no of pages">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="image">Upload File:</label>
+                                                <input type="file" id="image" name="image" placeholder="upload journal">
+                                            </div>
+                                            <input type="hidden" id="jstatus" name="jstatus" value="pending">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!----- Edit patent modal ----->
+                        <div class="modal fade" id="editpatentsModal" tabindex="-1" role="dialog" aria-labelledby="editpatentsModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="editpatentsModalLabel">Modal title</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <form id="editpatents">
                                         <div class="modal-body">
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
