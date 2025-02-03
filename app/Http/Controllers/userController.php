@@ -62,7 +62,7 @@ class userController extends Controller
     }
     // delete Journal
     public function deleteJournal($id)
-    {
+    { 
         $user = Journal::findorFail(id: $id);
         $user->delete();
         return response()->json(data: [
@@ -71,7 +71,9 @@ class userController extends Controller
         ]);
     }
     // edit Journal
-
+    public function editJournal($id){
+        
+    }
 
 
     // add consultancy

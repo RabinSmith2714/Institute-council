@@ -1,2 +1,8 @@
-User-agent: *
-Disallow:
+<html>
+	<body>
+		<select>
+			<option>hi</option>
+			<option>hello</option>
+		</select>
+	</body>
+</html>

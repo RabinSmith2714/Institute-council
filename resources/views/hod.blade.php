@@ -652,7 +652,7 @@
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
 
                         <!--------funded projects tab------------->
                         <div class="tab-pane fade" id="funded_projects" role="tabpanel" aria-labelledby="funded_projects-tab">
