@@ -1165,7 +1165,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>     
         <footer class="footer text-center">
             2024 © M.Kumarasamy College of Engineering All Rights Reserved.
         </footer>
@@ -1190,7 +1190,7 @@
             }
         });
     </script>
-    <script>
+    <script>                                                                         
         $(document).ready(function() {
             // Initialize DataTables for each table
             $('#journalTable').DataTable();
@@ -1200,7 +1200,7 @@
             $('#conferenceTable').DataTable({
                 "lengthChange": true,
                 "ordering": false,
-                "autoWidth": true,
+                "autoWidth": true,                          
                 "responsive": true,
             });
             $('#patentTable').DataTable();
