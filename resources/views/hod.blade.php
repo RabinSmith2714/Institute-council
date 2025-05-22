@@ -17,6 +17,7 @@
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
+        /* Custom CSS for the page */
         .bg-nav-pills {
             background-color: #f8f9fa;
         }
